@@ -11,8 +11,9 @@ import java.util.List;
 @RestController
 public class DivePlanerController {
 
+    @CrossOrigin(value="*")
     @ResponseBody
-    @RequestMapping(value="/dive-plan", method= RequestMethod.PUT, produces="application/json")
+    @RequestMapping(value="/dive-plan", method= RequestMethod.POST, produces="application/json")
     DivePlan computeDivePlan(@RequestBody DivePoint[] dive){
         DivePlan res = new DivePlan();
         DiveStopModel model = new DiveStopModel();

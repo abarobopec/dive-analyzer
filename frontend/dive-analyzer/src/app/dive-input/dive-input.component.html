@@ -1,0 +1,23 @@
+<table>
+    <thead>
+    <tr>
+        <th>Minutes</th>
+        <th>Prof.(m)</th>
+    </tr>
+    </thead>
+    <tfoot>
+    <tr>
+        <td><i class="fa fa-plus-circle" aria-hidden="true" (click)="addEmptyPoint()"></i></td>
+        <td><i class="fa fa-check-circle" aria-hidden="true" (click)="computeDive()"></i></td>
+    </tr>
+    </tfoot>
+
+    <tr *ngFor="let divePoint of dive">
+        <td>
+            <p-spinner [(ngModel)]="divePoint.date" [min]="0"></p-spinner>
+        </td>
+        <td>
+            <p-spinner [(ngModel)]="divePoint.depth" [min]="0"></p-spinner>
+        </td>
+    </tr>
+</table>

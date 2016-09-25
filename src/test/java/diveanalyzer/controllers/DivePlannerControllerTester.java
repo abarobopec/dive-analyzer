@@ -33,7 +33,7 @@ public class DivePlannerControllerTester {
         dive.add(new DivePoint(20,10));
         dive.add(new DivePoint(0,1));
         String body = jacksonObjectMapper.writeValueAsString(dive);
-        mvc.perform(MockMvcRequestBuilders.put("/dive-plan").accept(MediaType.APPLICATION_JSON).
+        mvc.perform(MockMvcRequestBuilders.post("/dive-plan").accept(MediaType.APPLICATION_JSON).
                 contentType(MediaType.APPLICATION_JSON_UTF8).content(body))
                 .andExpect(status().isOk());
     }
