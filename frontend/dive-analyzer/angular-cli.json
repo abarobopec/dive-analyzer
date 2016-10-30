@@ -16,9 +16,11 @@
       "mobile": false,
       "styles": [
         "styles.css",
-        "../node_modules/font-awesome/css/font-awesome.min.css"
+        "../node_modules/font-awesome/css/font-awesome.min.css",
+        "../node_modules/primeng/resources/primeng.min.css",
+        "../node_modules/primeng/resources/themes/omega/theme.css"
       ],
-      "scripts": [],
+      "scripts": ["../node_modules/chart.js/dist/Chart.bundle.min.js"],
       "environments": {
         "source": "environments/environment.ts",
         "dev": "environments/environment.ts",

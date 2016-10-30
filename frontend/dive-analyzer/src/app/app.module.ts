@@ -5,7 +5,7 @@ import {HttpModule} from '@angular/http';
 
 import {AppComponent} from './app.component';
 import {DiveInputComponent} from './dive-input/dive-input.component';
-import {SpinnerModule} from 'primeng/primeng';
+import {SpinnerModule, ChartModule} from 'primeng/primeng';
 import {DiveComputerService} from "./dive-computer.service";
 
 @NgModule({
@@ -17,7 +17,8 @@ import {DiveComputerService} from "./dive-computer.service";
         BrowserModule,
         FormsModule,
         HttpModule,
-        SpinnerModule
+        SpinnerModule,
+        ChartModule
     ],
     providers: [
         DiveComputerService

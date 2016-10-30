@@ -2,7 +2,7 @@ import {DivePoint} from "./dive-point";
 
 export class OverSatPoint{
     date: number;
-    distance: number;
+    dist: number;
 }
 
 export class DivePlan{
